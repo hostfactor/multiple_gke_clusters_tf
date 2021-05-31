@@ -1,6 +1,6 @@
 provider "kubernetes" {
   alias = "us_west1"
-  host = module.us_west1.cluster
+  host = module.us_west1.host
   token = data.google_client_config.provider.access_token
   cluster_ca_certificate = module.us_west1.ca_certificate
 }
